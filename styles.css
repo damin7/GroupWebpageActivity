@@ -1,42 +1,60 @@
 /* General page styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
 /* Header section styling */
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+    background: #282c34;
+    color: #ffffff;
+    padding: 20px 0;
     text-align: center;
+    border-bottom: 5px solid #ffeb3b; /* Yellow border at the bottom */
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
 }
 
 /* Styling for team logo image */
 .team-logo {
-    width: 150px; /* Adjust the size as needed */
+    width: 100px;
     margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #ffeb3b; /* Yellow border around logo */
+    border-radius: 50%;
 }
 
 /* Menu button styling */
 header nav {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 header nav button {
-    background: #007BFF;
+    background: #6a1b9a;
     color: white;
     border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 10px 20px;
+    border-radius: 50px;
     cursor: pointer;
-    margin: 0 5px;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 0 10px;
+    transition: background 0.3s ease;
 }
 
 header nav button:hover {
-    background: #0056b3;
+    background: #4a148c;
+    color: #ffeb3b; /* Yellow text on hover */
 }
 
 /* Flex container for team bios and vision sections */
@@ -58,14 +76,18 @@ header nav button:hover {
     flex: 1 1 calc(30% - 40px);
     text-align: center;
     transition: transform 0.2s;
+    border-left: 5px solid #ffeb3b; /* Yellow accent on the left side */
 }
 
 .card:hover {
     transform: scale(1.05);
+    border-color: #fdd835; /* Darker yellow on hover */
 }
 
 h2 {
+    font-family: 'Montserrat', sans-serif;
     margin: 0 0 10px;
+    color: #6a1b9a;
 }
 
 /* Initially hide bio details */
@@ -73,6 +95,7 @@ h2 {
     display: none;
     margin-top: 10px;
     color: #555;
+    font-style: italic;
 }
 
 /* Button styling */
@@ -83,8 +106,32 @@ button {
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 button:hover {
     background: #0056b3;
+    color: #ffeb3b; /* Yellow text on hover */
+}
+
+/* Styling for mission statement */
+#vision {
+    background: #ffeb3b; /* Yellow background for the vision section */
+    color: #282c34;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#vision h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #6a1b9a;
+}
+
+#vision p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #333;
 }
